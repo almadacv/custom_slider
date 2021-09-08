@@ -142,8 +142,6 @@ function custom_slider($atts)
 		</div>
 	</div>
 
-
-
 	<script>
 		var $jq = jQuery.noConflict();
 
@@ -152,14 +150,17 @@ function custom_slider($atts)
 			slidesToShow: 4,
 			slidesToScroll: 3,
 			/*adaptiveHeight: true,
+			variableWidth:true,
 			autoplay: true,
 			autoplayspeed: 2000, */
 			arrows: true,
 			dots: true,
 			// Add FontAwesome Class
 			appendArrows: '.container_slider',
-			prevArrow: '<div class="slider-prev fa fa-angle-left"></div>',
-			nextArrow: '<div class="slider-next fa fa-angle-right"></div>',
+			prevArrow: '<div class="slider-prev fa fa-chevron-left"></div>',
+			nextArrow: '<div class="slider-next fa fa-chevron-right"></div>',
+			//			prevArrow: '<div class="slider-prev fa fa-angle-left"></div>',
+			//			nextArrow: '<div class="slider-next fa fa-angle-right"></div>',
 			responsive: [{
 					breakpoint: 1024,
 					settings: {

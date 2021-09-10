@@ -114,7 +114,7 @@ function custom_slider($atts)
 		'ignore_sticky_posts'    => true,
 		'order'                  => 'ASC',
 		'orderby'                => 'title',
-
+		'post__not_in' => array($post->ID),
 	);
 
 	// The Query

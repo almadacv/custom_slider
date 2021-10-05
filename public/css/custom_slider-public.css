@@ -2,7 +2,72 @@
  * All of the CSS for your public-facing functionality should be
  * included in this file.
  */
+@media only screen and (min-width: 1024px) {
+  .slick-arrow {
+    opacity: 0;
+    transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+  }
+  .container_slider:hover .slick-arrow {
+    opacity: 1;
+  }
+  .slick-dots {
+    opacity: 0;
+    transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+  }
+  .container_slider:hover .slick-dots {
+    opacity: 1;
+  }
+}
 
- 
+.slider_texto p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.3em;
+  height: 2.6em;
+  font-family: "Poppins", poppins;
+  font-size: 15px;
+  font-weight: 600;
+  color: #28303d;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
 
+.slider_elemento {
+  margin: 5px;
+}
 
+.slider_img img {
+  /* background-color: green; */
+  /*border: 1px #888 solid;*/
+  box-shadow: 0px 0px 2px 0px rgb(0 0 0 / 50%);
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.slider-prev,
+.slider-next {
+  /* background-color: red; */
+}
+
+.slick-dots {
+  /* background-color: cyan; */
+}
+
+.container_slider {
+  /* background-color: pink; */
+}
+
+.slick-slide {
+  /* background-color: #4899dd; */
+}
+
+.slider_elemento {
+  /* border: 1px #888 solid;
+			border-radius: 8px; */
+  margin: 5px;
+}

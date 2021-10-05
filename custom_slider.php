@@ -86,8 +86,6 @@ run_custom_slider();
 
 function custom_slider($atts)
 {
-	//echo 'agagga';
-
 	// Attributes
 	$atts = shortcode_atts(
 		array(
@@ -120,6 +118,7 @@ function custom_slider($atts)
 	ob_start();
 ?>
 	<div class="container_slider">
+		<div id="abc"></div>
 		<div class="slider_gera">
 			<?php if ($query->have_posts()) {
 				while ($query->have_posts()) {
@@ -161,65 +160,30 @@ function custom_slider($atts)
 					{
 						breakpoint: 600,
 						settings: {
+							slidesToShow: 3,
+							slidesToScroll: 3
+						}
+					},
+					{
+						breakpoint: 450,
+						settings: {
 							slidesToShow: 2,
 							slidesToScroll: 2
 						}
 					},
+					{
+						breakpoint: 330,
+						settings: {
+							dots: false,
+							slidesToShow: 1,
+							slidesToScroll: 1
+
+						}
+					},
 				]
-			});
+			});;
 		});
 	</script>
-
-	<style>
-		.slider_texto p {
-			overflow: hidden;
-			text-overflow: ellipsis;
-			line-height: 1.3em;
-			height: 2.6em;
-			font-family: "Poppins", poppins;
-			font-size: 15px;
-			font-weight: 600;
-			color: #28303d;
-			display: -webkit-box;
-			-webkit-box-orient: vertical;
-			-webkit-line-clamp: 2;
-		}
-
-		.slider_elemento {
-			margin: 5px;
-		}
-
-		.slider_img img {
-			/* background-color: green; */
-			/*border: 1px #888 solid;*/
-			box-shadow: 0px 0px 2px 0px rgb(0 0 0 / 50%);
-			border-radius: 8px;
-			margin-bottom: 20px;
-		}
-
-		.slider-prev,
-		.slider-next {
-			/* background-color: red; */
-		}
-
-		.slick-dots {
-			/* background-color: cyan; */
-		}
-
-		.container_slider {
-			/* background-color: pink; */
-		}
-
-		.slick-slide {
-			/* background-color: #4899dd; */
-		}
-
-		.slider_elemento {
-			/* border: 1px #888 solid;
-			border-radius: 8px; */
-			margin: 5px;
-		}
-	</style>
 
 <?php
 				ob_end_flush();

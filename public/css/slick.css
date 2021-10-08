@@ -69,14 +69,7 @@
 }
 .slick-slide img {
   display: block;
-  /*mudado*/
-  /*width: auto !important; */
-  width: auto !important;
-  max-width: 100px !important;
-  height: 100px !important;
-  border-radius: 8px !important;
-  margin: 0 auto;
-}
+ }
 .slick-slide.slick-loading img {
   display: none;
 }
@@ -97,66 +90,3 @@
 .slick-arrow.slick-hidden {
   display: none;
 }
-
-/*MUDADO*/
-.container_slider {
-  padding: 10px;
-}
-.slider_gera {
-  margin: 0 24px;
-}
-/*.slick-list {
-  margin: 0 24px;
-}*/
-.slick-arrow {
-  position: absolute;
-  top: 50%;
-  height: 36px;
-  margin-top: -18px;
-  /*color: #000;*/
-  color: #333;
-  line-height: 36px;
-  font-size: 60px;
-  cursor: pointer;
-  z-index: 10;
-}
-
-.slider-prev {
-  left: 0px;
-}
-.slider-next {
-  right: 0px;
-}
-.slick-slide {
-  /*padding: 1em;*/
-  color: #fff;
-  text-align: center;
-  font-size: 1.1em;
-  outline: 0;
-}
-
-/* sa pus same tamanho */
-.slick-track {
-  display: flex !important;
-}
-
-.slick-slide {
-  height: inherit !important;
-}
-
-/* tenta centra */
-.slick-track .slick-slide {
-  display: flex;
-  height: auto;
-  align-items: center;
-  justify-content: center;
-}
-
-/*pul load dps d dje ka carrega*/
-.slider_gera {
-  visibility: hidden;
-}
-.slick-initialized {
-  visibility: visible;
-}
-/*MUDADO*/

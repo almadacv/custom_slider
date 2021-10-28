@@ -127,7 +127,7 @@ function custom_slider($atts)
 			?>
 					<div class="slider_elemento">
 						<a href="<?php the_permalink() ?> ">
-							<div class="slider_img"><?php the_post_thumbnail('post-thumbnail', array('class' => 'elementor-post__thumbnail lazyloaded elementor-fit-height')) ?> </div>
+							<div class="slider_img"><?php the_post_thumbnail('thumbnail', array('class' => 'elementor-post__thumbnail lazyloaded elementor-fit-height')) ?> </div>
 							<div class="slider_texto"> <?php the_title('<p class="elementor-post__title"">', '</p>') ?></div>
 						</a>
 					</div>
